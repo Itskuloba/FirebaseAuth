@@ -11,8 +11,10 @@ import com.example.firebaseauth.ui.theme.screens.about.AboutScreen
 import com.example.firebaseauth.ui.theme.screens.home.HomeScreen
 import com.example.firebaseauth.ui.theme.screens.login.LoginScreen
 import com.example.firebaseauth.ui.theme.screens.products.AddProductScreen
-import com.example.firebaseauth.ui.theme.screens.products.UpdateProductScreen
-import com.example.firebaseauth.ui.theme.screens.products.ViewProductScreen
+//import com.example.firebaseauth.ui.theme.screens.products.UpdateProductScreen
+import com.example.firebaseauth.ui.theme.screens.products.UpdateProductsScreen
+//import com.example.firebaseauth.ui.theme.screens.products.ViewProductScreen
+import com.example.firebaseauth.ui.theme.screens.products.ViewProductsScreen
 import com.example.firebaseauth.ui.theme.screens.register.RegisterScreen
 
 @Composable
@@ -35,11 +37,13 @@ fun AppNavHost(modifier: Modifier=Modifier,navController:NavHostController= reme
             AddProductScreen(navController)
         }
         composable(ROUTE_VIEW_PRODUCT){
-            ViewProductScreen(navController)
+            ViewProductsScreen(navController)
         }
-        composable(ROUTE_UPDATE_PRODUCT){
-            UpdateProductScreen(navController)
+
+        composable(ROUTE_UPDATE_PRODUCT+ "/{id}"){passedData ->
+            UpdateProductsScreen(navController,passedData.arguments?.getString("id")!!)
         }
+
     }
 
 }

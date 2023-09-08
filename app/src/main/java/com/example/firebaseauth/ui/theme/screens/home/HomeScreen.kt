@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.firebaseauth.data.productviewmodel
+import com.example.firebaseauth.data.Productviewmodel
 import com.example.firebaseauth.navigation.ROUTE_ADD_PRODUCT
 import com.example.firebaseauth.navigation.ROUTE_VIEW_PRODUCT
 
@@ -30,7 +30,7 @@ fun HomeScreen(navController: NavHostController) {
         .background(Color.White),
         horizontalAlignment = Alignment.CenterHorizontally) {
         var context= LocalContext.current
-        var productdata=productviewmodel(navController,context)
+        var productdata=Productviewmodel(navController,context)
 
         Text(text = "Welcome to Home page",
             color = Color.Magenta,
