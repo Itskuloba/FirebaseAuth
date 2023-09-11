@@ -7,8 +7,6 @@ import androidx.navigation.NavHostController
 import com.example.firebaseauth.models.User
 import com.example.firebaseauth.navigation.ROUTE_HOME
 import com.example.firebaseauth.navigation.ROUTE_LOGIN
-import com.example.firebaseauth.navigation.ROUTE_REGISTER
-import com.example.firebaseauth.ui.theme.FirebaseAuthTheme
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
@@ -53,10 +51,12 @@ class AuthViewModel (var navController:NavHostController,var context:Context){
                             navController.navigate(ROUTE_LOGIN)
                         }
                     }
-                } else
+                } else {
                     navController.navigate(ROUTE_LOGIN)
+                }
             }
         }
+    }
         fun login(email: String, pass: String) {
             progress.show()
             mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
@@ -80,4 +80,4 @@ class AuthViewModel (var navController:NavHostController,var context:Context){
         fun isloggedin(): Boolean {
             return mAuth.currentUser != null
         }
-    }}
+    }

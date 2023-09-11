@@ -8,8 +8,6 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.navigation.NavHostController
 import com.example.firebaseauth.models.Product
 import com.example.firebaseauth.navigation.ROUTE_LOGIN
-//import com.example.ericdatabasemmvvm.models.Product
-//import com.example.ericdatabasemmvvm.navigation.ROUTE_LOGIN
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase

@@ -1,6 +1,5 @@
 package com.example.firebaseauth.ui.theme.screens.products
 
-import android.content.res.Configuration
 import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -32,7 +31,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.firebaseauth.data.Productviewmodel
-//import com.example.firebaseauth.data.productviewmodel
 import com.example.firebaseauth.models.Product
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

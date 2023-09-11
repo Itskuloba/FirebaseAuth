@@ -25,10 +25,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.firebaseauth.data.Productviewmodel
-//import com.example.ericdatabasemmvvm.data.ProductRepository
-//import com.example.ericdatabasemmvvm.models.Product
-//import com.example.ericdatabasemmvvm.navigation.ROUTE_UPDATE_PRODUCTS
-//import com.example.firebaseauth.data.Productviewmodel
 import com.example.firebaseauth.models.Product
 import com.example.firebaseauth.navigation.ROUTE_VIEW_PRODUCT
 
